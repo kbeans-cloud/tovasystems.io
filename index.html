@@ -439,6 +439,9 @@
   .cred-num span { color: var(--plat); font-size: 1.1rem; }
   .cred-label { font-size: 0.72rem; color: var(--plat-dim); font-weight: 300; line-height: 1.4; }
 
+  /* ── VIDEO DUO ── */
+  .video-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .video-duo-item { display: flex; flex-direction: column; }
   /* ── ANIMATIONS ── */
   .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
@@ -459,6 +462,7 @@
     footer { flex-direction: column; align-items: flex-start; padding: 2rem 1.5rem; }
     .video-wrapper { grid-template-columns: 1fr; }
     .video-caption { max-width: 100%; }
+    .video-duo { grid-template-columns: 1fr; }
     .about-grid { grid-template-columns: 1fr; gap: 3rem; }
     .about-photo-col { position: static; }
     .about-photo-placeholder { aspect-ratio: 4/3; }
@@ -753,13 +757,20 @@
     <div class="section-label">Client Results</div>
     <h2 class="section-title">Hear it from<br><em>the client.</em></h2>
     <p class="section-body" style="margin-bottom:3.5rem;">This SMP clinic owner tripled his revenue in the first 90 days — running Facebook ads and backend automation through Tova Systems. In his own words.</p>
-    <div class="video-wrapper">
-      <div class="video-frame">
-        <iframe title="vimeo-player" src="https://player.vimeo.com/video/1019560135?h=b105edba51" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+    <div class="video-duo">
+      <div class="video-duo-item">
+        <div class="video-frame">
+          <iframe title="vimeo-player" src="https://player.vimeo.com/video/1019560135?h=b105edba51" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-caption-tag" style="margin-top:1rem;">SMP Clinic — Meta Ads + Automation</div>
+        <p class="video-caption-text">"Revenue tripled in 90 days" — Facebook lead generation + automated follow-up</p>
       </div>
-      <div class="video-caption">
-        <div class="video-caption-tag">SMP Clinic — Meta Ads + Automation</div>
-        <p class="video-caption-text">"Revenue tripled in 90 days" — Facebook lead generation + automated follow-up system</p>
+      <div class="video-duo-item">
+        <div class="video-frame">
+          <iframe src="https://player.vimeo.com/video/1200205910?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="They Brought Me Qualified, Exclusive Leads — Dallas Kuban, Kuban Realty"></iframe>
+        </div>
+        <div class="video-caption-tag" style="margin-top:1rem;">Kuban Realty — Lead Generation + Automation</div>
+        <p class="video-caption-text">"They brought me qualified, exclusive leads" — Dallas Kuban, Kuban Realty</p>
       </div>
     </div>
   </div>
